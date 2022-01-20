@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2022-01-19 17:11:18
- * @LastEditTime: 2022-01-20 17:03:47
+ * @LastEditTime: 2022-01-20 17:06:52
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /Bezier-master/main.js
@@ -57,13 +57,12 @@ const drawLines = (canvas, positions) => {
 const __main = () => {
   const canvas = document.querySelector(".g-canvas");
 
-  const start = [20, 200];
-  const end = [10, 10];
+  const start = [100, 200]
+  const end = [300, 200]
 
-  const p1 = [250, 50];
-  const p2 = [80, 80];
+  const p1 = [200, 100]
 
-  const ps = [start, p1, p2, end]
+  const ps = [start, p1, end]
   
   drawLines(canvas, ps)
   drawPoints(canvas, ps)
