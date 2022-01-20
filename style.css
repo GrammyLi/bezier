@@ -1,0 +1,15 @@
+.g-canvas {
+  margin-top: 36px;
+  border: 1px rgb(98, 154, 231) solid;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.g-setting {
+  margin-top: 36px;
+  margin-left: 32px;
+}

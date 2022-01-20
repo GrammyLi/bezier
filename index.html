@@ -1,33 +1,36 @@
 <!--
  * @Author: your name
  * @Date: 2022-01-19 17:07:48
- * @LastEditTime: 2022-01-19 18:57:32
+ * @LastEditTime: 2022-01-20 09:55:59
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /bezier/index.html
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>g-bezier</title>
-  <style media="screen">
-    .g-canvas {
-        margin-top: 36px;
-        border: 1px rgb(98, 154, 231) solid;
-    }
-    body {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
-</style>
-<script src="./utils.js"></script>
+  <link href="./style.css" rel="stylesheet">
+  <script src="./utils.js"></script>
 </head>
+
 <body>
-  <canvas class="g-canvas" width="400" height="300"></canvas>
+  <canvas class="g-canvas" width="600" height="500"></canvas>
+  <div class="g-setting">
+    <div class="g-field">
+      <div class="g-label">point:</div>
+      <div class="g-value">
+        <input class="point" name="radio" type="radio" checked /> start
+        <input class="point" name="radio" type="radio" /> end
+        <input class="point" name="radio" type="radio" /> add point
+      </div>
+    </div>
+  </div>
   <script src="./main.js"></script>
 </body>
+
 </html>
