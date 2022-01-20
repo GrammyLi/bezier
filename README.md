@@ -120,13 +120,10 @@ const drawPoint = (
 const drawPoints = (canvas, positions) => {
   const startIndex = 0
   const endIndex = positions.length - 1
-  const start = positions[startIndex]
-  const end = positions[endIndex]
-  drawPoint(canvas, start, 10, "red");
-  drawPoint(canvas, end, 10, "red");
-
+  
   positions.forEach((p, i) => {
     if ([startIndex, endIndex].includes(i)) {
+      drawPoint(canvas, p, 10, "red");
       return
     }
     drawPoint(canvas, p, 10, "blue");
